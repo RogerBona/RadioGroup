@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout_Principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/Layout_Configuram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Configuram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Configura’m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/RG_layouts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/Olletra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Opcions de lletra"
+                android:onClick="ButtonLayouts"/>
+
+            <RadioButton
+                android:id="@+id/Ocolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Opcions de color"
+                android:onClick="ButtonLayouts"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Tamany de la lletra:"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/moltpetita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Tamanydelalletra"
+                android:text="Molt petita" />
+
+            <RadioButton
+                android:id="@+id/petita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Tamanydelalletra"
+                android:text="petita" />
+
+            <RadioButton
+                android:id="@+id/mitjana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Tamanydelalletra"
+                android:text="Mitjana" />
+
+            <RadioButton
+                android:id="@+id/gran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Tamanydelalletra"
+                android:text="Gran" />
+
+            <RadioButton
+                android:id="@+id/moltgran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Tamanydelalletra"
+                android:text="Molt gran" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Colorlletratxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Color de la lletra:"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Colorfonsletra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Color del fons de la lletra:"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/Vermell2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordelaLletra"
+                    android:text="Vermell" />
+
+                <RadioButton
+                    android:id="@+id/Verd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordelaLletra"
+                    android:text="Verd" />
+
+                <RadioButton
+                    android:id="@+id/Blau2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordelaLletra"
+                    android:text="Blau" />
+
+                <RadioButton
+                    android:id="@+id/Blanc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordelaLletra"
+                    android:text="Blanc" />
+
+                <RadioButton
+                    android:id="@+id/Negre2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordelaLletra"
+                    android:text="Negre" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/Vermell"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelaLletra"
+                    android:text="Vermell" />
+
+                <RadioButton
+                    android:id="@+id/Verd"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelaLletra"
+                    android:text="Verd" />
+
+                <RadioButton
+                    android:id="@+id/Blau"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelaLletra"
+                    android:text="Blau" />
+
+                <RadioButton
+                    android:id="@+id/Blanc"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelaLletra"
+                    android:text="Blanc" />
+
+                <RadioButton
+                    android:id="@+id/Negre"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelaLletra"
+                    android:text="Negre" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/codiHexlletra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Codi HEX sense #"
+                android:text=""
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:maxLength="6" />
+
+            <AutoCompleteTextView
+                android:id="@+id/codiHexfonslletra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Codi HEX sense #"
+                android:text=""
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:maxLength="6"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Colordelfonstxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color del fons"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/vermell3"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelLayout"
+                    android:text="Vermell" />
+
+                <RadioButton
+                    android:id="@+id/verd3"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelLayout"
+                    android:text="Verd" />
+
+                <RadioButton
+                    android:id="@+id/blau3"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelLayout"
+                    android:text="Blau" />
+
+                <RadioButton
+                    android:id="@+id/blanc3"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelLayout"
+                    android:text="Blanc" />
+
+                <RadioButton
+                    android:id="@+id/negre3"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:onClick="ColordeFonsdelLayout"
+                    android:text="Negre" />
+            </RadioGroup>
+
+            <AutoCompleteTextView
+                android:id="@+id/codiHexfons"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Codi HEX sense #"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:maxLength="6"/>
+
+            <Button
+                android:id="@+id/bt_aplicam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:onClick="Botoaplicar"
+                android:text="APLICAR"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
